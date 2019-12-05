@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="container">
+
+        <div class="row mt-5">
+            <div class="col-6">
+                <h5>Broadcast via Azure Topic</h5>
+                <div>
+                    <form method="post">
+                        <button class="btn btn-primary" type="submit" asp-page-handler="PurchaseFlight">Broadcast message</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col-6">
+                <h5>Send via Azure Queue</h5>
+
+                <div>
+                    <form method="post">
+                        <button class="btn btn-primary" type="submit" asp-page-handler="EnqueueMessage">Enqueue message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
